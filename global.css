@@ -1,0 +1,29 @@
+body {
+    background: lavender;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+}
+
+.question-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.w3-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.w3-text {
+    color: darkslateblue;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
