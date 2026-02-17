@@ -2,6 +2,14 @@
 
 A web-based survey application designed to collect statistical data regarding the use of technology for preventing psycho-physical risks in the workplace.
 
+> [!NOTE]
+> **School Project**: This project was developed as a high school assignment for the "Informatica" course.
+>
+> 📄 **Attached Documentation**:
+>
+> - `Fase1Progetto.pdf`: Initial project analysis and requirements.
+> - `Report dell'indagine sul lavoro.pdf`: Final report on the survey findings.
+
 ## 📊 Project Overview
 
 This application presents a structured questionnaire to users, categorizing questions based on their job type (Office vs. Manual Labor). It aims to analyze how modern technologies (AI, wearables, ergonomics) impact worker safety and well-being.
