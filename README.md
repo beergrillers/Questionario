@@ -1,38 +1,48 @@
-# Work Safety Questionnaire (Questionario sul Lavoro)
+<div align="center">
+  <h1>📋 Questionario</h1>
+  <p><em>PHP Web Application for Wellness & Technology Surveys</em></p>
+  
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+  <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+</div>
 
-A web-based survey application designed to collect statistical data regarding the use of technology for preventing psycho-physical risks in the workplace.
+---
 
-> [!NOTE]
-> **School Project**: This project was developed as a high school assignment for the "Informatica" course.
->
-> 📄 **Attached Documentation**:
->
-> - `Fase1Progetto.pdf`: Initial project analysis and requirements.
-> - `Report dell'indagine sul lavoro.pdf`: Final report on the survey findings.
+## 📖 Overview
 
-## 📊 Project Overview
+**Questionario** is an academic project featuring a web-based survey about the prevention of psycho-physical risks in the workplace through the use of technology.
 
-This application presents a structured questionnaire to users, categorizing questions based on their job type (Office vs. Manual Labor). It aims to analyze how modern technologies (AI, wearables, ergonomics) impact worker safety and well-being.
+Built with procedural PHP and vanilla HTML/CSS, it serves as a foundational exercise in building web forms, handling HTTP GET parameters, and establishing communication with a MySQL database to store user responses.
 
-## 🛠 Tech Stack
+### 🎯 Core Features
 
-- **Backend**: PHP
-- **Database**: MySQL
-- **Frontend**: HTML5, CSS3, W3.CSS
-- **Styling**: W3.CSS framework for a clean, consistent look.
+- **Dynamic Survey Interface**: Front-end form tailored with W3.CSS for responsive design, dynamically splitting questions based on the user's employment type (office vs. manual labor).
+- **Data Collection**: A `backend.php` script that captures form submissions and constructs a SQL query to register responses.
+- **Database Integration**: Direct connection to a MySQL database (`my_antonybuffone1`) appending answers to a `questionari` table with timestamps.
 
-## ⚙️ Features
+## 🛠️ Architecture & Tech Stack
 
-- **Dynamic Form**: Adapts questions based on user responses (e.g., Office vs. Manual work).
-- **Data Collection**: Stores responses in a MySQL database for statistical analysis.
-- **Responsiveness**: Optimized for both desktop and mobile devices.
+- **Backend Logic**: Procedural PHP implementation utilizing `mysqli_connect` and `mysqli_query` for database interactions.
+- **Frontend**: HTML5 and CSS3, styled largely via raw structure and W3.CSS utility classes.
+- **Database**: Relational MySQL structure designed to hold a wide array of discrete survey answers (`ris1` to `ris16`).
 
-## 🚀 Setup & Run
+---
 
-1.  **Requirements**: A local server environment like XAMPP, MAMP, or WAMP.
-2.  **Database**: Import the SQL schema (structure implied by `insert` statements in `index.php`).
-    - Database Name: `my_antonybuffone1`
-    - Table: `questionari`
-3.  **Run**: Place the project folder in your server's root directory (`htdocs` or `www`) and navigate to `http://localhost/Questionario`.
+## ⚙️ Setup & Installation
 
-> **Note**: Database credentials in `index.php` act as a placeholder for a local development environment.
+To run the application locally, you will need a PHP server environment (like XAMPP, MAMP, or LAMP).
+
+1. **Clone the repository** into your server's root directory (`htdocs` or `www` veya `var/www/html`):
+
+   ```bash
+   git clone https://github.com/beergrillers/Questionario.git
+   ```
+
+2. **Database Configuration**:
+   - Create a MySQL database named `my_antonybuffone1`.
+   - Create a table named `questionari` with the following columns: `data` (datetime) and `ris1` through `ris16` (ints/varchars).
+   - Verify the database user credentials in `backend.php` (Line 13: `root` and `""` by default).
+
+3. **Run**:
+   Open your browser and navigate to `http://localhost/Questionario/index.html` (or `backend.php` directly).
